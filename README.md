@@ -2,19 +2,6 @@
 
 This project was developed as part of CS GY 6513 – Big Data at NYU. It analyzes historical subway ridership data using PySpark to detect patterns, identify anomalies, model usage trends, and cluster stations by behavior.
 
-## Project Structure
-
-BD_Project/  
-├── notebooks/  
-│ └── main_analysis.ipynb # Full workflow in Google Colab  
-├── data/  
-│ └── mta_hourly_features.parquet # Input dataset (preprocessed)  
-├── exports/  
-│ └── saved models, vectorizers, etc.  
-├── results/  
-│ └── screenshots of visual outputs  
-└── README.md
-
 ## How to Run
 
 ### 1. Setup Spark in Google Colab
@@ -23,11 +10,12 @@ BD_Project/
 !apt-get install openjdk-11-jdk-headless -qq > /dev/null
 !wget -q https://archive.apache.org/dist/spark/spark-3.3.2/spark-3.3.2-bin-hadoop3.tgz
 !tar xf spark-3.3.2-bin-hadoop3.tgz
-!pip install -q findspark```
+!pip install -q findspark
+```
 
 
 ### 2. Initialize Spark and Load Data
-
+```
 import os  
 import findspark
 
@@ -47,7 +35,7 @@ drive.mount('/content/drive')
 df = spark.read.parquet(  
     "/content/drive/MyDrive/BD_Project/mta_hourly_features.parquet"  
 )
-
+```
 
 ## Features
 
@@ -106,11 +94,12 @@ df = spark.read.parquet(
 ## Authors
 
 - **Rohan Subramaniam** – rs1234@nyu.edu  
-- **Jane Doe** – jd5678@nyu.edu  
-
+- **Nishanth Ganapathy Palaniswamy** – ng3124@nyu.edu  
+- **Akash R** – ar8974@nyu.edu
+  
 ---
 
 ## Resources
 
-- NYC MTA Open Data: [https://new.mta.info/developers](https://new.mta.info/developers)  
-- Project report and screenshots available in the `/results/` folder  
+- NYC MTA Open Data: [https://www.mta.info/open-data]
+- MTA Subway hourly ridership dataset: https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-2020-2024/wujg-7c2s/about_data
