@@ -17,15 +17,17 @@ BD_Project/
 
 ## How to Run
 
-1. Setup Spark in Google Colab
+### 1. Setup Spark in Google Colab
 
 ```bash
 !apt-get install openjdk-11-jdk-headless -qq > /dev/null
 !wget -q https://archive.apache.org/dist/spark/spark-3.3.2/spark-3.3.2-bin-hadoop3.tgz
 !tar xf spark-3.3.2-bin-hadoop3.tgz
-!pip install -q findspark
+!pip install -q findspark```
 
-2. Initialize Spark and Load Data
+
+### 2. Initialize Spark and Load Data
+
 import os  
 import findspark
 
