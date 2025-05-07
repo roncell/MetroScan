@@ -102,4 +102,4 @@ df = spark.read.parquet(
 ## Resources
 
 - NYC MTA Open Data: [https://www.mta.info/open-data]
-- MTA Subway hourly ridership dataset: https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-2020-2024/wujg-7c2s/about_data
+- MTA Subway hourly ridership dataset: [https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-2020-2024/wujg-7c2s/about_data]
